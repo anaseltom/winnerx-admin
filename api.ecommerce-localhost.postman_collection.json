@@ -1,0 +1,2822 @@
+{
+	"info": {
+		"_postman_id": "2d315c17-d631-43a8-947b-44fec3503df9",
+		"name": "api.ecommerce-localhost",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8000/api/v1/user/signin",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"avtividad@yahoo.com\",\r\n    \"password\": \"adonis123\",\r\n    \"billing\":true,\r\n    \"social_media\":false\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/user/signin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"signin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/v1/user/signup",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"avtividad@yahoo.com\",\r\n  \"password\": \"adonis123\",\r\n  \"first_name\":\"Adonis\",\r\n  \"last_name\":\"Tividad\",\r\n  \"user_type\":\"customer\",\r\n  \"_user_type\":\"seller\",\r\n  \"__user_type\":\"admin\",\r\n  \"org_name\":\"workone\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/user/signup",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"signup"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/v1/user/verify-otp",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"avtividad@yahoo.com\",\r\n    \"otp\": \"6412\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/user/verify-otp",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"verify-otp"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/v1/user/send-otp",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"email\": \"avtividad@yahoo.com\",\r\n  \"_orgName\": \"tividad\",\r\n  \"__orgName\": \"ecommerce_db\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/user/send-otp",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"send-otp"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/v1/users/fetch",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"_id\": 1,\r\n    \"email\": \"avtividad@yahoo.com\",\r\n    \"___user_type\": \"customer\",\r\n    \"_user_type\": \"seller\",\r\n    \"__user_type\": \"admin\",\r\n    \"status\": \"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/users/fetch",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"users",
+						"fetch"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/v1/users/fetch-all",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"_id\": 1,\r\n    \"user_type\": \"customer\",\r\n    \"_user_type\": \"seller\",\r\n    \"__user_type\": \"admin\",\r\n    \"_status\": \"active\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/users/fetch-all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"users",
+						"fetch-all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/v1/users/update",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"categoryCode\": \"test categoryCode\",\r\n    \"categoryName\": \"test categoryName\",\r\n    \"keywords\": \"test keywords\",\r\n    \"description\": \"test description\",\r\n    \"header\": \"test header\",\r\n    \"footer\": \"test footer\",\r\n    \"imageSmall\": \"test imageSmall\",\r\n    \"imageMedium\": \"test imageMedium\",\r\n    \"imageLarge\": \"test imageLarge\",\r\n    \"extra1\": \"test extra1\",\r\n    \"extra2\": \"test extra2\",\r\n    \"extra3\": \"test extra3\",\r\n    \"parentId\": 0,\r\n    \"categoryOrder\": 0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/users/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"users",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/v1/categories/fetch",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"_id\": 1,\r\n    \"_category_code\": \"\",\r\n    \"_category_name\": \"\",\r\n    \"_keywords\": \"\",\r\n    \"_seller_id\": 2,\r\n    \"status\": \"active\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/categories/fetch",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"categories",
+						"fetch"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/v1/categories/fetch-all",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"_id\": 1,\r\n    \"_category_code\": \"\",\r\n    \"_category_name\": \"\",\r\n    \"_keywords\": \"\",\r\n    \"_seller_id\": 2,\r\n    \"status\": \"active\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/categories/fetch-all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"categories",
+						"fetch-all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/v1/categories/update",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"categoryCode\": \"test categoryCode\",\r\n    \"categoryName\": \"test categoryName\",\r\n    \"keywords\": \"test keywords\",\r\n    \"description\": \"test description\",\r\n    \"header\": \"test header\",\r\n    \"footer\": \"test footer\",\r\n    \"imageSmall\": \"test imageSmall\",\r\n    \"imageMedium\": \"test imageMedium\",\r\n    \"imageLarge\": \"test imageLarge\",\r\n    \"extra1\": \"test extra1\",\r\n    \"extra2\": \"test extra2\",\r\n    \"extra3\": \"test extra3\",\r\n    \"parentId\": 0,\r\n    \"categoryOrder\": 0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/categories/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"categories",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/v1/products/fetch",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"_id\":1, \r\n  \"_categoryCode\":\"\", \r\n  \"_categoryName\":\"\", \r\n  \"_keywords\":\"\", \r\n  \"status\":\"active\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/products/fetch",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"products",
+						"fetch"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/v1/products/fetch-all",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"_id\": 329,\r\n    \"_sellerName\": \"\",\r\n    \"_categoryCode\": \"\",\r\n    \"_productName\": \"\",\r\n    \"_brandName\": \"\",\r\n    \"_description\": \"\",\r\n    \"_color\": \"\",\r\n    \"_gender\": \"\",\r\n    \"_size\": \"\",\r\n    \"_keywords\": \"\",\r\n    \"_parent_id\": 329,\r\n    \"__parent_id\": null,\r\n    \"status\": \"active\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/products/fetch-all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"products",
+						"fetch-all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/v1/products/update",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"sellerName\": \"test sellerName\",\r\n    \"categoryCode\": \"test categoryCode\",\r\n    \"productName\": \"test productName\",\r\n    \"brandName\": \"test brandName\",\r\n    \"description\": \"test description\",\r\n    \"color\": \"test color\",\r\n    \"gender\": \"test  gender\",\r\n    \"size\": \"M\",\r\n    \"keywords\": \"the quikc brown fox jumps over the lazy dog near the bank of the river\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/products/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"products",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/v1/products/update-list",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"items\": [\r\n        {\r\n            \"id\": 378,\r\n            \"parent_id\": 329,\r\n            \"parent_name\": \"Nike-tshirt\",\r\n            \"image_url_main\": \"https://m.media-amazon.com/images/I/61TA0Uz7ITL._AC_SY550_.jpg\",\r\n            \"product_name\": \"small\",\r\n            \"unit_price\": \"1.00\",\r\n            \"units_in_stock\": 5,\r\n            \"sku\": \"\"\r\n        },\r\n        {\r\n            \"id\": 379,\r\n            \"parent_id\": 329,\r\n            \"parent_name\": \"Nike-tshirt\",\r\n            \"image_url_main\": \"https://m.media-amazon.com/images/I/61TA0Uz7ITL._AC_SY550_.jpg\",\r\n            \"product_name\": \"medium\",\r\n            \"unit_price\": \"2.00\",\r\n            \"units_in_stock\": 2,\r\n            \"sku\": \"\"\r\n        },\r\n        {\r\n            \"id\": 380,\r\n            \"parent_id\": 329,\r\n            \"parent_name\": \"Nike-tshirt\",\r\n            \"image_url_main\": \"https://m.media-amazon.com/images/I/61TA0Uz7ITL._AC_SY550_.jpg\",\r\n            \"product_name\": \"large\",\r\n            \"unit_price\": \"3.00\",\r\n            \"units_in_stock\": 9,\r\n            \"sku\": \"\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/products/update-list",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"products",
+						"update-list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/v1/products/import",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"sellerId\": 1,\r\n    \"sellerName\": \"auric\" \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/products/import",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"products",
+						"import"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/v1/products/deals",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"_id\": 329,\r\n    \"status\": \"active\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/products/deals",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"products",
+						"deals"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/v1/customers/fetch",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"_id\":1, \r\n  \"_categoryCode\":\"\", \r\n  \"_categoryName\":\"\", \r\n  \"_keywords\":\"\", \r\n  \"status\":\"active\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/customers/fetch",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"customers",
+						"fetch"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/v1/customers/fetch-all",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"_id\": 1,\r\n    \"_user_id\": 1,\r\n    \"_userName\": \"\",\r\n    \"_keywords\": \"\",\r\n    \"status\": \"active\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/customers/fetch-all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"customers",
+						"fetch-all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/v1/customers/update",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 0,\r\n    \"userName\": \"test userName\",\r\n    \"password\": \"test password\",\r\n    \"codeName\": \"test codeName\",\r\n    \"firstName\": \"test firstName\",\r\n    \"lastName\": \"test lastName\",\r\n    \"organization\": \"test organization\",\r\n    \"addressType\": \"test addressType\",\r\n    \"homeAddress\": \"test homeAddress\",\r\n    \"homeCity\": \"test homeCity\",\r\n    \"homeState\": \"test homeState\",\r\n    \"homePostalCode\": \"test homePostalCode\",\r\n    \"homeCountry\": \"test homeCountry\",\r\n    \"homeLat\": \"test homeLat\",\r\n    \"homeLng\": \"test homeLng\",\r\n    \"homeLocation\": \"test homeLocation\",\r\n    \"officeAddress\": \"test officeAddress\",\r\n    \"officeCity\": \"test officeCity\",\r\n    \"officeState\": \"test officeState\",\r\n    \"officePostalCode\": \"test officePostalCode\",\r\n    \"officeCountry\": \"test officeCountry\",\r\n    \"officeLat\": \"test officeLat\",\r\n    \"officeLng\": \"test officeLng\",\r\n    \"officeLocation\": \"test officeLocation\",\r\n    \"browserName\": \"test browserName\",\r\n    \"countryCode\": \"test countryCode\",\r\n    \"countryCodeNo\": \"test countryCodeNo\",\r\n    \"mobilePrefix\": \"test mobilePrefix\",\r\n    \"mobileNo\": \"test mobileNo\",\r\n    \"phone1\": \"test phone1\",\r\n    \"phone2\": \"test phone2\",\r\n    \"email\": \"test email\",\r\n    \"extra1\": \"test extra1\",\r\n    \"extra2\": \"test extra2\",\r\n    \"extra3\": \"test extra3\",\r\n    \"extra4\": \"test extra4\",\r\n    \"extra5\": \"test extra5\",\r\n    \"notes\": \"test notes\",\r\n    \"mapUrl\": \"test mapUrl\",\r\n    \"referredBy\": \"test referredBy\",\r\n    \"points\": \"test points\",\r\n    \"orderNoCurrent\": \"test orderNoCurrent\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/customers/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"customers",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/v1/vendors/fetch",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"_id\":1, \r\n  \"_categoryCode\":\"\", \r\n  \"_categoryName\":\"\", \r\n  \"_keywords\":\"\", \r\n  \"status\":\"active\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/vendors/fetch",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"vendors",
+						"fetch"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/v1/vendors/fetch-all",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"_id\": 1,\r\n    \"_sellerName\": \"\",\r\n    \"_categoryCode\": \"\",\r\n    \"_productName\": \"\",\r\n    \"_brandName\": \"\",\r\n    \"_description\": \"\",\r\n    \"_color\": \"\",\r\n    \"_gender\": \"\",\r\n    \"_size\": \"\",\r\n    \"_keywords\": \"\",\r\n    \"status\": \"active\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/vendors/fetch-all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"vendors",
+						"fetch-all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/v1/vendors/update",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 0,\r\n    \"categoryCode\": \"test categoryCode\",\r\n    \"companyName\": \"test companyName\",\r\n    \"contactFName\": \"test contactFName\",\r\n    \"contactLName\": \"test contactLName\",\r\n    \"contactTitle\": \"test contactTitle\",\r\n    \"address1\": \"test address1\",\r\n    \"address2\": \"test address2\",\r\n    \"city\": \"test city\",\r\n    \"state\": \"test state\",\r\n    \"postalCode\": \"test postalCode\",\r\n    \"country\": \"test country\",\r\n    \"lat\": \"test lat\",\r\n    \"lon\": \"test lon\",\r\n    \"phone1\": \"test phone1\",\r\n    \"phone2\": \"test phone2\",\r\n    \"email1\": \"test email1\",\r\n    \"email2\": \"test email2\",\r\n    \"url\": \"test url\",\r\n    \"paymentMethods\": \"test paymentMethods\",\r\n    \"discountType\": \"test discountType\",\r\n    \"typeGoods\": \"test typeGoods\",\r\n    \"discountAvailable\": \"test discountAvailable\",\r\n    \"logo\": \"test logo\",\r\n    \"extra1\": \"test extra1\",\r\n    \"extra2\": \"test extra2\",\r\n    \"extra3\": \"test extra3\",\r\n    \"extra4\": \"test extra4\",\r\n    \"extra5\": \"test extra5\",\r\n    \"notes\": \"test notes\",\r\n    \"lastUpdated\": \"test lastUpdated\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/vendors/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"vendors",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/v1/sellers/fetch",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"_id\":1, \r\n  \"_categoryCode\":\"\", \r\n  \"_categoryName\":\"\", \r\n  \"_keywords\":\"\", \r\n  \"status\":\"active\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/sellers/fetch-all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"sellers",
+						"fetch-all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/v1/sellers/fetch-all",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"_id\": 1,\r\n    \"_sellerName\": \"\",\r\n    \"_categoryCode\": \"\",\r\n    \"_productName\": \"\",\r\n    \"_brandName\": \"\",\r\n    \"_description\": \"\",\r\n    \"_color\": \"\",\r\n    \"_gender\": \"\",\r\n    \"_size\": \"\",\r\n    \"_keywords\": \"\",\r\n    \"status\": \"active\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/sellers/fetch-all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"sellers",
+						"fetch-all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/v1/sellers/update",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 0,\r\n    \"sellerCode: number,\": \"test sellerCode: number,\",\r\n    \"email\": \"test email\",\r\n    \"password\": \"test password\",\r\n    \"firstName\": \"test firstName\",\r\n    \"lastName\": \"test lastName\",\r\n    \"storeName\": \"test storeName\",\r\n    \"organization\": \"test organization\",\r\n    \"address1\": \"test address1\",\r\n    \"address2\": \"test address2\",\r\n    \"city\": \"test city\",\r\n    \"state\": \"test state\",\r\n    \"postalCode\": \"test postalCode\",\r\n    \"country\": \"test country\",\r\n    \"lat\": \"test lat\",\r\n    \"lng\": \"test lng\",\r\n    \"location\": \"test location\",\r\n    \"browserName\": \"test browserName\",\r\n    \"website\": \"test website\",\r\n    \"mobileNo\": \"test mobileNo\",\r\n    \"phone1\": \"test phone1\",\r\n    \"phone2\": \"test phone2\",\r\n    \"email1\": \"test email1\",\r\n    \"email2\": \"test email2\",\r\n    \"extra1\": \"test extra1\",\r\n    \"extra2\": \"test extra2\",\r\n    \"extra3\": \"test extra3\",\r\n    \"extra4\": \"test extra4\",\r\n    \"extra5\": \"test extra5\",\r\n    \"notes\": \"test notes\",\r\n    \"referredBy\": \"test referredBy\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/sellers/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"sellers",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/v1/reviews/fetch",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"_id\":1, \r\n  \"_product_id\":1, \r\n  \"user_id\":1, \r\n  \"status\":\"active\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/reviews/fetch",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"reviews",
+						"fetch"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/v1/reviews/fetch-all",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"_id\":1, \r\n  \"_product_id\":1, \r\n  \"_user_id\":1, \r\n  \"status\":\"active\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/reviews/fetch-all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"reviews",
+						"fetch-all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/v1/reviews/update",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 0,\r\n    \"product_id\": 1,\r\n    \"user_id\": 1,\r\n    \"rating\": 4.3,\r\n    \"remarks\": \"test remarks\",\r\n    \"status\": \"active\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/reviews/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"reviews",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/v1/promotions/fetch",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"_id\":1, \r\n  \"_product_id\":1, \r\n  \"status\":\"active\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/promotions/fetch",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"promotions",
+						"fetch"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/v1/promotions/fetch-all",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"_id\":1, \r\n  \"_product_id\":1, \r\n  \"status\":\"active\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/promotions/fetch-all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"promotions",
+						"fetch-all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/v1/promotions/update",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\":1, \r\n  \"product_id\":1, \r\n  \"status\":\"active\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/promotions/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"promotions",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/v1/orders/test",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"iso3Code\": \"ARE\",\r\n    \"_user_id\": 1,\r\n    \"_status\": \"active\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/orders/test",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"orders",
+						"test"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/v1/orders/fetch",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\":1, \r\n  \"_user_id\":1, \r\n  \"_status\":\"active\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/orders/fetch",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"orders",
+						"fetch"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/v1/orders/fetch-all",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"_id\":1, \r\n  \"user_id\":1, \r\n  \"_customer_id\":2, \r\n  \"_status\":\"active\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/orders/fetch-all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"orders",
+						"fetch-all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/v1/orders/update",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 0,\r\n    \"customer_id\": 2,\r\n    \"status\": \"active\",\r\n    \"items\": [\r\n        {\r\n            \"deal_id\": 1,\r\n            \"product_id\": 1,\r\n            \"quantity\": 11,\r\n            \"price\": 11.20\r\n        },\r\n        {\r\n            \"deal_id\": 2,\r\n            \"product_id\": 2,\r\n            \"quantity\": 12,\r\n            \"price\": 20.20\r\n        },\r\n        {\r\n            \"deal_id\": 3,\r\n            \"product_id\": 3,\r\n            \"quantity\": 13,\r\n            \"price\": 30.10\r\n        }\r\n    ],\r\n    \"shipping_address\": {\r\n        \"first_name\": \"Geraldine\",\r\n        \"last_name\": \"Tividad\",\r\n        \"country\": \"United Arab Emirates\",\r\n        \"country_code\": \"ARE\",\r\n        \"mobile_no\": \"050000000\",\r\n        \"city\": \"Dubai\",\r\n        \"company\": \"\",\r\n        \"address\": \"Al Shamsi Buiilding\" \r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/orders/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"orders",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/v1/order_items/fetch",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"_id\": 1,\r\n    \"order_id\": 1,\r\n    \"_product_id\": 1,\r\n    \"status\": \"active\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/order_items/fetch",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"order_items",
+						"fetch"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/v1/order_items/fetch-all",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"_id\": 1,\r\n    \"_order_id\": 1,\r\n    \"_product_id\": 1,\r\n    \"status\": \"active\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/order_items/fetch-all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"order_items",
+						"fetch-all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/v1/order_items/update",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\":1, \r\n  \"status\":\"active\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/order_items/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"order_items",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/v1/order_returns/fetch",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"_id\":1, \r\n  \"_user_id\":1, \r\n  \"status\":\"active\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/order_returns/fetch",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"order_returns",
+						"fetch"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/v1/order_returns/fetch-all",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 1,\r\n    \"_user_id\": 1,\r\n    \"_order_id\": 1,\r\n    \"_product_id\": 1,\r\n    \"_package_status\": \"pending\",\r\n    \"status\": \"active\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/order_returns/fetch-all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"order_returns",
+						"fetch-all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/v1/order_returns/update",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user_id\":1,\r\n    \"order_id\":1,\r\n    \"order_item_id\":1,\r\n    \"product_id\":1,\r\n    \"quantity\":10,\r\n    \"package_status\": \"pickup\",\r\n    \"reason\": \"unknown\",\r\n    \"_status\": \"active\",\r\n    \"status\": \"refunded\",\r\n    \"__status\": \"archived\",\r\n    \"___status\": \"refund_requested\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/order_returns/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"order_returns",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/v1/prizes/fetch",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"_id\":1, \r\n  \"_item_name\":1, \r\n  \"_product_id\":1, \r\n  \"status\":\"active\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/prizes/fetch",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"prizes",
+						"fetch"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/v1/prizes/fetch-all",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"_id\":1, \r\n  \"item_name\":\"civic\", \r\n  \"_product_id\":1, \r\n  \"_status\":\"active\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/prizes/fetch-all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"prizes",
+						"fetch-all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/v1/prizes/update",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 2,\r\n    \"item_name\": \"Honda civic 2023\",\r\n    \"item_description\": \"Win cash\",\r\n    \"image\": \"\",\r\n    \"product_id\": 2,\r\n    \"quantity_sold\": 25,\r\n    \"quantity_max\": 26,\r\n    \"limit_per_person\": false,\r\n    \"remarks\": \"remarks test\",\r\n    \"status\": \"active\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/prizes/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"prizes",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/v1/billing_addresses/fetch",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"_id\":1, \r\n  \"order_id\":1, \r\n  \"customer_id\":1, \r\n   \"status\":\"active\"\r\n}\r\n\r\n ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/billing_addresses/fetch",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"billing_addresses",
+						"fetch"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/v1/billing_addresses/fetch-all",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"_id\": 1,\r\n    \"order_id\": 1,\r\n    \"customer_id\": 1,\r\n    \"status\": \"active\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/billing_addresses/fetch-all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"billing_addresses",
+						"fetch-all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/v1/billing_addresses/update",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"_id\": 1,\r\n    \"order_id\": 1,\r\n    \"customer_id\": 1,\r\n    \"status\": \"active\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/billing_addresses/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"billing_addresses",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/v1/shipping_addresses/fetch",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"_id\": 1,\r\n    \"order_id\": 1,\r\n    \"customer_id\": 1,\r\n    \"status\": \"active\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/shipping_addresses/fetch",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"shipping_addresses",
+						"fetch"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/v1/shipping_addresses/fetch-all",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"_id\": 1,\r\n    \"order_id\": 1,\r\n    \"customer_id\": 1,\r\n    \"status\": \"active\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/shipping_addresses/fetch-all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"shipping_addresses",
+						"fetch-all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/v1/shipping_addresses/update",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"_id\": 1,\r\n    \"order_id\": 1,\r\n    \"customer_id\": 1,\r\n    \"status\": \"active\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/shipping_addresses/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"shipping_addresses",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/v1/stripe/create-invoice-intent",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"ip\": \"83.110.87.37\",\r\n    \"email\": \"adonis@tividad.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/stripe/create-invoice-intent",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"stripe",
+						"create-invoice-intent"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/v1/stripe/create-payment-intent",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"adonis@tividad.com\",\r\n    \"currency\": \"aed\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/stripe/create-payment-intent",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"stripe",
+						"create-payment-intent"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/v1/stripe/config",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"ip\": \"83.110.87.37\",\r\n    \"email\": \"adonis@tividad.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/stripe/config",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"stripe",
+						"config"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/v1/stripe/create-product-price-filler",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"plan\":\"fixed\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/stripe/create-product-price-filler",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"stripe",
+						"create-product-price-filler"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://ecommerce-api.tividad.com/api/v1/stripe/create-invoice-intent",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"customerId\": \"cus_Lur6fcjmuLDs3X\",\r\n    \"paymentMethodType\": \"card\",\r\n    \"currency\": \"aed\",\r\n    \"items\": [\r\n        {\r\n            \"price_id\": \"price_1LDu9KGJ9N8chZjodWpkDQLt\"\r\n        },\r\n        {\r\n            \"price_id\": \"price_1LDu9JGJ9N8chZjoMlyUp0bc\"\r\n        },\r\n        {\r\n            \"price_id\": \"price_1LDu9KGJ9N8chZjotGjWxbBB\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://ecommerce-api.tividad.com/api/v1/stripe/create-invoice-intent",
+					"protocol": "https",
+					"host": [
+						"ecommerce-api",
+						"tividad",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"stripe",
+						"create-invoice-intent"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://api-stripe-apple-pay.tividad.com/create-invoice-intent",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"customerId\": \"cus_Lur6fcjmuLDs3X\",\r\n    \"paymentMethodType\": \"card\",\r\n    \"currency\": \"aed\",\r\n    \"items\": [\r\n        {\r\n            \"price_id\": \"price_1LFHJKGJ9N8chZjo7deymr5p\"\r\n        },\r\n        {\r\n            \"price_id\": \"price_1LFHJKGJ9N8chZjo2Mh84cEH\"\r\n        } \r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api-stripe-apple-pay.tividad.com/create-invoice-intent",
+					"protocol": "https",
+					"host": [
+						"api-stripe-apple-pay",
+						"tividad",
+						"com"
+					],
+					"path": [
+						"create-invoice-intent"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://ecommerce-api.tividad.com/api/v1/stripe/create-payment-intent",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"adonis@tividad.com\",\r\n    \"currency\": \"aed\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://ecommerce-api.tividad.com/api/v1/stripe/create-payment-intent",
+					"protocol": "https",
+					"host": [
+						"ecommerce-api",
+						"tividad",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"stripe",
+						"create-payment-intent"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://ecommerce-api.tividad.com/api/v1/stripe/config",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"ip\": \"83.110.87.37\",\r\n    \"email\": \"adonis@tividad.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://ecommerce-api.tividad.com/api/v1/stripe/config",
+					"protocol": "https",
+					"host": [
+						"ecommerce-api",
+						"tividad",
+						"com"
+					],
+					"path": [
+						"api",
+						"v1",
+						"stripe",
+						"config"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/v1/customers/update-test",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"id\": 4,\r\n\"first_name\": \"Donsss\",\r\n\"last_name\": \"Tividad\",\r\n\"country\": \"United Arab Emirates\",\r\n\"city\": \"Sharjah\",\r\n\"address\": null,\r\n\"apartment\": null,\r\n\"phone\": null,\r\n\"addressType\": null,\r\n\"home_address\": null,\r\n\"home_city\": null,\r\n\"home_state\": null,\r\n\"home_postal_code\": null,\r\n\"home_country\": null,\r\n\"home_lat\": null,\r\n\"home_lng\": null,\r\n\"home_location\": null,\r\n\"office_address\": null,\r\n\"office_city\": null,\r\n\"office_state\": null,\r\n\"office_postal_code\": null,\r\n\"office_country\": null,\r\n\"office_lat\": null,\r\n\"office_lng\": null,\r\n\"office_location\": null,\r\n\"browser_name\": null,\r\n\"country_code\": null,\r\n\"country_code_no\": null,\r\n\"mobile_prefix\": null,\r\n\"mobile_no\": null,\r\n\"phone1\": null,\r\n\"phone2\": null,\r\n\"email\": null,\r\n\"extra1\": null,\r\n\"extra2\": null,\r\n\"extra3\": null,\r\n\"extra4\": null,\r\n\"extra5\": null,\r\n\"notes\": null,\r\n\"map_url\": null,\r\n\"referred_by\": null,\r\n\"points\": null,\r\n\"order_no_current\": null,\r\n\"total_orders\": 5,\r\n\"total_spent\": \"251.59\",\r\n\"status\": \"active\",\r\n\"modified_at\": \"2022-07-13T03:40:28.000Z\",\r\n\"created_at\": \"2022-07-13T03:40:28.000Z\",\r\n\"user_id\": 1,\r\n\"user\": {\r\n  \"id\": 1,\r\n\"first_name\": \"Adonis\",\r\n\"last_name\": \"Tividad\",\r\n\"email\": \"avtividad@yahoo.com\",\r\n\"country\": null,\r\n\"role\": \"SUPER_ADMIN\",\r\n\"permissions\": \"GRANTED_ALL\",\r\n\"org_name\": \"tividad\",\r\n\"session\": null,\r\n\"email_status\": \"not_verified\",\r\n\"user_type\": \"customer\",\r\n\"status\": \"first_time\",\r\n\"modified_at\": \"2022-07-13T02:14:53.000Z\",\r\n\"created_at\": \"2022-06-01T12:25:55.000Z\"\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/customers/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"customers",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/upload",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "folder",
+							"value": "don-store",
+							"type": "text"
+						},
+						{
+							"key": "isnewname",
+							"value": "true",
+							"type": "default",
+							"disabled": true
+						},
+						{
+							"key": "images",
+							"type": "file",
+							"src": "/D:/taskagram.com/image-1~200.jpg"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://localhost:8000/upload",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"upload"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/v1/user/verify-account?",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"adonis@tividad.com\",\r\n    \"username\": \"adonis\",\r\n    \"password\": \"adonis\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/user/verify-account?uveid=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyZXN1bHQiOjE3LCJvcmciOiJ0YWtlb25lX2RiIiwiaWF0IjoxNjI4MDgwNDM3fQ.XCXnguZmlxwjHUe1U4-r75zl2HSvuOFEcLmmmeKakIU",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"user",
+						"verify-account"
+					],
+					"query": [
+						{
+							"key": "uveid",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyZXN1bHQiOjE3LCJvcmciOiJ0YWtlb25lX2RiIiwiaWF0IjoxNjI4MDgwNDM3fQ.XCXnguZmlxwjHUe1U4-r75zl2HSvuOFEcLmmmeKakIU"
+						},
+						{
+							"key": "uveid=\n\nhttp://artist.takeone.studio/signin?uveid=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyZXN1bHQiOjE0LCJvcmciOiJ0YWtlb25lX2RiIiwiaWF0IjoxNjI4MDc5MDcxfQ.s5JIxJA4P9w05QyiPLP_eAviHyfVlUO193AD3I2rbAQ\n\nGoogle\n\n",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/v1/order_returns/update-list",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"order_id\": 1,\r\n    \"items\": [\r\n        {\r\n            \"quantity\": \"11\",\r\n            \"user_id\": 1,\r\n            \"order_id\": 1,\r\n            \"product_id\": 2,\r\n            \"reason\": \"size was too small\"\r\n        },\r\n        {\r\n            \"quantity\": \"2\",\r\n            \"user_id\": 1,\r\n            \"order_id\": 1,\r\n            \"product_id\": 1,\r\n            \"reason\": \"customer changed their mind\"\r\n        },\r\n        {\r\n            \"quantity\": \"1\",\r\n            \"user_id\": 1,\r\n            \"order_id\": 1,\r\n            \"product_id\": 3,\r\n            \"reason\": \"unknown\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/order_returns/update-list",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"order_returns",
+						"update-list"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/v1/order_returns/create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"order_no\":\"1001\",\r\n    \"items\": [\r\n        {\r\n            \"quantity\": \"11\",\r\n            \"user_id\": 1,\r\n            \"order_id\": 1,\r\n            \"product_id\": 2,\r\n            \"reason\": \"size was too small\"\r\n        },\r\n        {\r\n            \"quantity\": \"2\",\r\n            \"user_id\": 1,\r\n            \"order_id\": 1,\r\n            \"product_id\": 1,\r\n            \"reason\": \"customer changed their mind\"\r\n        },\r\n        {\r\n            \"quantity\": \"1\",\r\n            \"user_id\": 1,\r\n            \"order_id\": 1,\r\n            \"product_id\": 3,\r\n            \"reason\": \"unknown\"\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/order_returns/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"order_returns",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/v1/order_returns/delete",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"ref_no\": \"1001-R1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/order_returns/delete",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"order_returns",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/v1/order_fulfillments/create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"order_id\": 1 ,\r\n    \"order_no\":\"1001\",\r\n    \"items\": [\r\n        {\r\n            \"quantity\": \"11\",\r\n            \"user_id\": 1,\r\n            \"order_id\": 1,\r\n            \"product_id\": 2 \r\n        },\r\n        {\r\n            \"quantity\": \"2\",\r\n            \"user_id\": 1,\r\n            \"order_id\": 1,\r\n            \"product_id\": 1 \r\n        },\r\n        {\r\n            \"quantity\": \"1\",\r\n            \"user_id\": 1,\r\n            \"order_id\": 1,\r\n            \"product_id\": 3 \r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/order_fulfillments/create",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"order_fulfillments",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/v1/order_fulfillments/fetch",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"_id\": 1,\r\n    \"_user_id\": 1,\r\n    \"_order_id\": 1,\r\n    \"_product_id\": 1,\r\n    \"status\": \"active\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/order_fulfillments/fetch",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"order_fulfillments",
+						"fetch"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/v1/order_fulfillments/fetch-all",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"_id\": 1,\r\n    \"_user_id\": 1,\r\n    \"_order_id\": 1,\r\n    \"_product_id\": 1,\r\n    \"status\": \"active\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/order_fulfillments/fetch-all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"order_fulfillments",
+						"fetch-all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/v1/order_fulfillments/delete",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"ref_no\": \"1001-F1\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/order_fulfillments/delete",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"order_fulfillments",
+						"delete"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/v1/order_fulfillments/update",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"ref_no\": \"1001-F1\",\r\n    \"tracking_no\":\"tracking_no-\",\r\n    \"shipping_carrier\":\"shipping_carrier-1\",\r\n    \"tracking_url\":\"tracking_url-1\" \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/order_fulfillments/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"order_fulfillments",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/v1/deals/fetch",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\":1, \r\n  \"_user_id\":1, \r\n  \"_status\":\"active\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/deals/fetch",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"deals",
+						"fetch"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/v1/deals/fetch-all",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\":1, \r\n  \"_user_id\":1, \r\n  \"_status\":\"active\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/deals/fetch-all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"deals",
+						"fetch-all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/v1/deals/fetch-products",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\":1,  \r\n  \"_status\":\"active\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/deals/fetch-products",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"deals",
+						"fetch-products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://api.storein.net/api/v1/deals/update",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 0,\r\n    \"user_id\": 1,\r\n    \"status\": \"active\",\r\n    \"items\": [\r\n        {\r\n            \"product_id\": 1,\r\n            \"quantity\": 11,\r\n            \"price\": 11.00\r\n        },\r\n        {\r\n            \"product_id\": 2,\r\n            \"quantity\": 12,\r\n            \"price\": 22.00\r\n        },\r\n        {\r\n            \"product_id\": 3,\r\n            \"quantity\": 13,\r\n            \"price\": 33.00\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.storein.net/api/v1/deals/update",
+					"protocol": "https",
+					"host": [
+						"api",
+						"storein",
+						"net"
+					],
+					"path": [
+						"api",
+						"v1",
+						"deals",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/v1/deal_products/fetch",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\":1, \r\n  \"_user_id\":1, \r\n  \"_status\":\"active\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/deal_products/fetch",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"deal_products",
+						"fetch"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/v1/deal_products/fetch-all",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"_id\":1, \r\n  \"_user_id\":1, \r\n  \"_status\":\"active\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/deal_products/fetch-all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"deal_products",
+						"fetch-all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/v1/deal_products/update",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"_id\": 0,\r\n    \"_user_id\": 1,\r\n     \"deal_id\": 1,\r\n    \"status\": \"active\",\r\n    \"items\": [\r\n        {\r\n            \"deal_id\": 1,\r\n            \"product_id\": 1,\r\n            \"quantity_max\": \"5\",\r\n            \"quantity_sold\": 0\r\n        },\r\n        {\r\n            \"deal_id\": 1,\r\n            \"product_id\": \"3\",\r\n            \"quantity_max\": \"8\",\r\n            \"quantity_sold\": 0\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/deal_products/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"deal_products",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/v1/winners/fetch",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\":1, \r\n  \"_user_id\":1, \r\n  \"_status\":\"active\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/winners/fetch",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"winners",
+						"fetch"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://api.winnerx.shop/api/v1/winners/fetch-all",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"_id\": 1,\r\n  \"_entry_code\": \"\",\r\n  \"_customer_id\":26,\r\n  \"_product_id\":1,\r\n  \"_deal_id\":1,\r\n  \"status\":\"active\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.winnerx.shop/api/v1/winners/fetch-all",
+					"protocol": "https",
+					"host": [
+						"api",
+						"winnerx",
+						"shop"
+					],
+					"path": [
+						"api",
+						"v1",
+						"winners",
+						"fetch-all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/v1/winners/update",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 0,\r\n    \"entry_code\": \"string\",\r\n    \"customer_id\": 1,\r\n    \"deal_id\": 3,\r\n    \"product_id\": 6,\r\n    \"deal_date_end\": \"\",\r\n    \"_status\": \"active\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/winners/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"winners",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/v1/deal_entries/fetch",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\":1, \r\n  \"_user_id\":1, \r\n  \"_status\":\"active\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/deal_entries/fetch",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"deal_entries",
+						"fetch"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/v1/deal_entries/fetch-all",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\r\n  \"_entry_code\":\"8CAC556A\", \r\n   \"status\":\"winner\",\r\n   \"_status\":\"active\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/deal_entries/fetch-all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"deal_entries",
+						"fetch-all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/v1/deal_entries/update",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"_id\": 0,\r\n    \"_user_id\": 1,\r\n     \"deal_id\": 1,\r\n    \"status\": \"active\",\r\n    \"items\": [\r\n        {\r\n            \"deal_id\": 1,\r\n            \"product_id\": 1,\r\n            \"quantity_max\": \"5\",\r\n            \"quantity_sold\": 0\r\n        },\r\n        {\r\n            \"deal_id\": 1,\r\n            \"product_id\": \"3\",\r\n            \"quantity_max\": \"8\",\r\n            \"quantity_sold\": 0\r\n        }\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/deal_entries/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"deal_entries",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/v1/deliveries/fetch-countries",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"iso3Code\":\"ARE\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/deliveries/fetch-countries",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"deliveries",
+						"fetch-countries"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/v1/deliveries/request-orders",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\":1\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/deliveries/request-orders",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"deliveries",
+						"request-orders"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/v1/deliveries/request-orders-old",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"customerRef\": \"CUS-0006d\",\r\n  \"type\": \"Delivery\",\r\n  \"origin\": {\r\n    \"contactName\": \"WinnerX Staff\",\r\n    \"contactNo\": \"0500000000\",\r\n    \"city\": \"Dubai\",\r\n    \"country\": \"ARE\",\r\n    \"address\": \"Deira\"\r\n  },\r\n  \"destination\": {\r\n    \"contactName\": \"Adonis Tividad\",\r\n    \"contactNo\": \"0509608995\",\r\n    \"city\": \"Dubai\",\r\n    \"country\": \"ARE\",\r\n    \"address\": \"Deira\"\r\n  },\r\n  \"packages\": [\r\n    {\r\n      \"name\": \"Parker Ballpen\",\r\n      \"customerRef\": \"P-0001\"\r\n    }\r\n  ],\r\n  \"category\": \"Next Day\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/deliveries/request-orders",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"deliveries",
+						"request-orders"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/v1/deliveries/fetch-orders",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"orderId\":\"CUS-0006d\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/deliveries/fetch-orders",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"deliveries",
+						"fetch-orders"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/v1/deliveries/cancel-orders",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"orderId\":\"CUS-0002\",\r\n    \"_orderId\":\"1001\",\r\n    \"_cancelReasonId\": 15,\r\n    \"__cancelReasonId\": 16,\r\n    \"cancelReasonId\": 17\r\n}\r\n/*\r\n15: \"Changed in mind\" \r\n16: \"Package not available\" \r\n17: \"Others\" Other values will be rejected\r\n\r\n*/\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/deliveries/cancel-orders",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"deliveries",
+						"cancel-orders"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/v1/deliveries/story-orders",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"__orderId\":\"CUS-0003\",\r\n    \"orderId\":\"104\",\r\n    \"_orderId\":\"1001\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/deliveries/story-orders",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"deliveries",
+						"story-orders"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/v1/deliveries/update-orders",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"orderId\": \"CUS-0006d\",\r\n    \"readyForDelivery\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/deliveries/update-orders",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"deliveries",
+						"update-orders"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8000/api/v1/deliveries/print-orders",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"orderId\": \"CUS-0006d\" \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/v1/deliveries/print-orders",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"v1",
+						"deliveries",
+						"print-orders"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

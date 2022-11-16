@@ -1,0 +1,33 @@
+/* body {
+    --ion-background-color: #f0f5f9 !important;
+} */
+
+.auth-wrapper {
+    height: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-y: auto;
+}
+
+.auth-wrapper .auth-box {
+    height: 100%;
+    box-sizing: border-box;
+    padding: 10px 0;
+}
+
+.signup-box {
+    background: rgba( 255, 255, 255, 0.5 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+}
+
+.comp_logo {
+    height: 50px;
+}
